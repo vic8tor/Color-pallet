@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		577E537927688ECD006C1A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E537827688ECD006C1A23 /* AppDelegate.swift */; };
 		577E537B27688ECD006C1A23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E537A27688ECD006C1A23 /* SceneDelegate.swift */; };
-		577E537D27688ECD006C1A23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E537C27688ECD006C1A23 /* ViewController.swift */; };
+		577E537D27688ECD006C1A23 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E537C27688ECD006C1A23 /* SettingsViewController.swift */; };
 		577E538027688ECD006C1A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E537E27688ECD006C1A23 /* Main.storyboard */; };
 		577E538227688ECF006C1A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577E538127688ECF006C1A23 /* Assets.xcassets */; };
 		577E538527688ECF006C1A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E538327688ECF006C1A23 /* LaunchScreen.storyboard */; };
+		57AAAF3B2778954700AE1F61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AAAF3A2778954700AE1F61 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		577E537527688ECD006C1A23 /* Sliders_RGB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sliders_RGB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		577E537527688ECD006C1A23 /* Color pallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color pallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		577E537827688ECD006C1A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577E537A27688ECD006C1A23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		577E537C27688ECD006C1A23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		577E537C27688ECD006C1A23 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		577E537F27688ECD006C1A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		577E538127688ECF006C1A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577E538427688ECF006C1A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		577E538627688ECF006C1A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AAAF3A2778954700AE1F61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		577E536C27688ECD006C1A23 = {
 			isa = PBXGroup;
 			children = (
-				577E537727688ECD006C1A23 /* Sliders_RGB */,
+				577E537727688ECD006C1A23 /* Color pallet */,
 				577E537627688ECD006C1A23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +50,64 @@
 		577E537627688ECD006C1A23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				577E537527688ECD006C1A23 /* Sliders_RGB.app */,
+				577E537527688ECD006C1A23 /* Color pallet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		577E537727688ECD006C1A23 /* Sliders_RGB */ = {
+		577E537727688ECD006C1A23 /* Color pallet */ = {
+			isa = PBXGroup;
+			children = (
+				57AAAF3F2778961400AE1F61 /* SupportFiles */,
+				57AAAF3C2778957000AE1F61 /* ViewControllers */,
+				57AAAF3E2778960300AE1F61 /* Storyboards */,
+				57AAAF3D277895F700AE1F61 /* Resources */,
+			);
+			path = "Color pallet";
+			sourceTree = "<group>";
+		};
+		57AAAF3C2778957000AE1F61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				577E537C27688ECD006C1A23 /* SettingsViewController.swift */,
+				57AAAF3A2778954700AE1F61 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		57AAAF3D277895F700AE1F61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				577E538127688ECF006C1A23 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57AAAF3E2778960300AE1F61 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				577E537E27688ECD006C1A23 /* Main.storyboard */,
+				577E538327688ECF006C1A23 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		57AAAF3F2778961400AE1F61 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
 				577E537827688ECD006C1A23 /* AppDelegate.swift */,
 				577E537A27688ECD006C1A23 /* SceneDelegate.swift */,
-				577E537C27688ECD006C1A23 /* ViewController.swift */,
-				577E537E27688ECD006C1A23 /* Main.storyboard */,
-				577E538127688ECF006C1A23 /* Assets.xcassets */,
-				577E538327688ECF006C1A23 /* LaunchScreen.storyboard */,
 				577E538627688ECF006C1A23 /* Info.plist */,
 			);
-			path = Sliders_RGB;
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		577E537427688ECD006C1A23 /* Sliders_RGB */ = {
+		577E537427688ECD006C1A23 /* Color pallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 577E538927688ECF006C1A23 /* Build configuration list for PBXNativeTarget "Sliders_RGB" */;
+			buildConfigurationList = 577E538927688ECF006C1A23 /* Build configuration list for PBXNativeTarget "Color pallet" */;
 			buildPhases = (
 				577E537127688ECD006C1A23 /* Sources */,
 				577E537227688ECD006C1A23 /* Frameworks */,
@@ -82,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = Sliders_RGB;
+			name = "Color pallet";
 			productName = Sliders_RGB;
-			productReference = 577E537527688ECD006C1A23 /* Sliders_RGB.app */;
+			productReference = 577E537527688ECD006C1A23 /* Color pallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 577E537027688ECD006C1A23 /* Build configuration list for PBXProject "Sliders_RGB" */;
+			buildConfigurationList = 577E537027688ECD006C1A23 /* Build configuration list for PBXProject "Color pallet" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				577E537427688ECD006C1A23 /* Sliders_RGB */,
+				577E537427688ECD006C1A23 /* Color pallet */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577E537D27688ECD006C1A23 /* ViewController.swift in Sources */,
+				577E537D27688ECD006C1A23 /* SettingsViewController.swift in Sources */,
 				577E537927688ECD006C1A23 /* AppDelegate.swift in Sources */,
 				577E537B27688ECD006C1A23 /* SceneDelegate.swift in Sources */,
+				57AAAF3B2778954700AE1F61 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Sliders_RGB/Info.plist;
+				INFOPLIST_FILE = "Color pallet/SupportFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -301,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Victor.Sliders-RGB";
+				PRODUCT_BUNDLE_IDENTIFIER = "Victor.Color-pallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Sliders_RGB/Info.plist;
+				INFOPLIST_FILE = "Color pallet/SupportFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Victor.Sliders-RGB";
+				PRODUCT_BUNDLE_IDENTIFIER = "Victor.Color-pallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		577E537027688ECD006C1A23 /* Build configuration list for PBXProject "Sliders_RGB" */ = {
+		577E537027688ECD006C1A23 /* Build configuration list for PBXProject "Color pallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				577E538727688ECF006C1A23 /* Debug */,
@@ -348,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		577E538927688ECF006C1A23 /* Build configuration list for PBXNativeTarget "Sliders_RGB" */ = {
+		577E538927688ECF006C1A23 /* Build configuration list for PBXNativeTarget "Color pallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				577E538A27688ECF006C1A23 /* Debug */,
