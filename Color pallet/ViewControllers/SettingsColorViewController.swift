@@ -31,9 +31,9 @@ class SettingsColorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redValueTextField.delegate = self
-        greenValueTextField.delegate = self
-        blueValueTextField.delegate = self
+//        redValueTextField.delegate = self
+//        greenValueTextField.delegate = self
+//        blueValueTextField.delegate = self
         
         colorView.layer.cornerRadius = 15
         
@@ -90,27 +90,27 @@ class SettingsColorViewController: UIViewController {
     
 }
 
-extension SettingsColorViewController: UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        guard let value = textField.text else { return }
-       
-        guard let newValue = Float(value)  else {
-        textField.text = nil
-        return
-        }
-        
-        guard newValue >= 0 && newValue <= 1 else {
-            textField.text = nil
-            return
-        }
-        
-        switch textField {
-        case redValueTextField:
-            redSlider.value = newValue
-        case greenValueTextField:
-            greenSlider.value = newValue
-        default:
-            blueSlider.value = newValue
-        }
-    }
- }
+//extension SettingsColorViewController: UITextFieldDelegate {
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        guard let value = textField.text else { return }
+//
+//        guard let newValue = Float(value)  else {
+//        textField.text = nil
+//        return
+//        }
+//
+//        guard newValue >= 0 && newValue <= 1 else {
+//            textField.text = nil
+//            return
+//        }
+//
+//        switch textField {
+//        case redValueTextField:
+//            redSlider.value = newValue
+//        case greenValueTextField:
+//            greenSlider.value = newValue
+//        default:
+//            blueSlider.value = newValue
+//        }
+//    }
+// }
